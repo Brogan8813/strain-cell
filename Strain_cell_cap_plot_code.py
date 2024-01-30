@@ -9,6 +9,7 @@ delta_v = np.array([0,0,0,120,140,-140,-120])
 alpha= 54.26
 d_0 = 49.44
 c_p = 0.0553
+test=True
 
 disp = alpha/(cap-c_p) - d_0
 plt.scatter(delta_v, cap)
@@ -17,3 +18,4 @@ plt.xlabel('Delta Voltage (V)')
 plt.ylabel('Capacitance (pF)')
 plt.grid()
 plt.show()
+
