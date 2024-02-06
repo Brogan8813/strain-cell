@@ -14,14 +14,19 @@ temp = np.array([300, 340, 340, 300, 300, 300, 250, 250, 250, 200, 200, 200, 100
 alpha= 54.26
 d_0 = 49.44
 c_p = 0.0553
-test=True
+plot_from_300=True
 
 
 disp = alpha/(cap-c_p) - d_0
 #plt.scatter(delta_v, cap)
-plt.scatter(temp, Ti_cal_cap)
+if plot_from_300 ==True:
+  plt.scatter(temp[3:], Ti_cal_cap[3:], s=30, marker="x")
+else:
+  plt.scatter(temp, Ti_cal_cap, s=30, marker="x")
+#plt.plot(temp, Ti_cal_cap)
 plt.xlabel('Temperature(K)')
 #plt.xlabel('Delta Voltage (V)')
+
 plt.ylabel('Capacitance (pF)')
 plt.grid()
 plt.show()
