@@ -50,6 +50,10 @@ def displacement(cap):
     return(disp)
 
 
+plt.scatter(temperature[-1],capacitance[-1], s=30, marker ='x', c = 'black' )
+plt.scatter(temperature[20],capacitance[20], s=30, marker ='x', c = 'black' )
+plt.scatter(temperature[12],capacitance[12], s=30, marker ='x', c = 'black' )
+
 '''plot_from_300=True
 if plot_from_300 ==True:
   plt.scatter(temp[3:], Ti_cal_cap[3:], s=30, marker="x")
