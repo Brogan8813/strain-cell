@@ -1,5 +1,6 @@
 import pyvisa
-import numpy
+import numpy as np
+print(np.array([1,2,3,4]))
 rm = pyvisa.ResourceManager()
 print(rm.list_resources())
 #pyvisa.ResourceManager('@py')
