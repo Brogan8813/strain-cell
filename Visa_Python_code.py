@@ -34,7 +34,8 @@ def continuous(no_of_measurements, interval_in_seconds=1):
         time.sleep(0.1)#waits as the AH is slow at times to do measurements 
         raw_data = AH_2550.read_raw()
         split_data = raw_data.split()#splits data at every whitespace, can then index through each split string
-        data_trans = [float(split_data[1]), float(split_data[3])]
+        data_trans = [float(split_data[1]), float(split_data[3])]#select string's that are cap and loss and make them floats
+        '''ADD A TRY EXCEPT LOOP FOR ANY PF OR NS VALUES THAT GET PICKED UP'''
         print(data_trans)
         df.loc[i] = data_trans
         time.sleep(interval_in_seconds)
