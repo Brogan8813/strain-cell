@@ -6,7 +6,7 @@ import time
 print(time.strftime('%H:%M:%S'))
 
 rm = pyvisa.ResourceManager() #make the 'resource manager' object through VISA
-#print(rm.list_resources())#shows what connections are available 
+print(rm.list_resources())#shows what connections are available 
 
 '''then, once a printed instruments such as 'GPIB0::14::INSTR' is returned, find your instrument name and call label it, i.e. for AH 2550 Bridge:
 AH_2550 = rm.open_resource('GPIB0::14::INSTR')
@@ -19,13 +19,15 @@ values = AH_2550.query_ascii_values('CONT?', container=numpy.array, separator='$
 '''
 AH_2550 = rm.open_resource('GPIB0::28::INSTR')
 #print(AH_2550.query('*IDN?'))
+
+
 #values = AH_2550.query_ascii_values('SINGLE', container=np.array)
 #print(f"values are {values}")
 
-def continuous(no_of_measurements, interval_in_seconds=1):
+def continuous(no_of_measurements, filename, interval_in_seconds=0.5):
 
     '''takes a certain number of single measurements of capacitance and loss with a set interval (default 1 second) between each measurement
-      and puts them into a csv file along with a timestamp'''
+      and puts them into a csv file titled "filename" along with a timestamp'''
     
     header = ['Capacitance(pF)', 'Loss (nSiemens)', 'Timestamp (24hr)']
     df =pd.DataFrame(columns=header) #df of nos to put into csv file at the end
@@ -45,14 +47,14 @@ def continuous(no_of_measurements, interval_in_seconds=1):
         print(data_trans)
         df.loc[i] = data_trans
         time.sleep(interval_in_seconds)
-    df.to_csv('test.csv', index=False)
+    df.to_csv(filename+'.csv', index=False)
     return ('finished')
 
 
+continuous(1800,'Cu_py_5k_max_strain_test_200to_neg_200V')
 
 
-
-
+ 
 
 
 

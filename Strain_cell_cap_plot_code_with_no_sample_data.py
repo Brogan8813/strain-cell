@@ -29,6 +29,7 @@ cap_five_k = capacitance[-10:]
 five_index_max = np.argmax(cap_five_k)
 five_index_min = np.argmin(cap_five_k)
 
+
 #max V applied at 5K
 plt.scatter((temp_five_k[five_index_max], temp_five_k[five_index_min]), (cap_five_k[five_index_max], cap_five_k[five_index_min]), s=30, marker="x", c= 'r')
 plt.plot((temp_five_k[five_index_max], temp_five_k[five_index_min]), (cap_five_k[five_index_max], cap_five_k[five_index_min]), c='r', label = '200V, -200V')
