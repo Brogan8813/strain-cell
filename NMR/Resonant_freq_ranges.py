@@ -1,4 +1,4 @@
-from pickle import FALSE
+
 import numpy as np
 
 #Code to show range of possible resonance frequencies for given conditions in NMR circuit for series parallel and parallel series setups
