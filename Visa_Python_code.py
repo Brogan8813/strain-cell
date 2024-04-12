@@ -27,7 +27,7 @@ AH_2550 = rm.open_resource('GPIB0::28::INSTR')
 def continuous(no_of_measurements, filename, interval_in_seconds=0.5):
 
     '''takes a certain number of single measurements of capacitance and loss with a set interval (default 1 second) between each measurement
-      and puts them into a csv file titled "filename" along with a timestamp'''
+    and puts them into a csv file titled "filename" along with a timestamp'''
     
     header = ['Capacitance(pF)', 'Loss (nSiemens)', 'Timestamp (24hr)']
     df =pd.DataFrame(columns=header) #df of nos to put into csv file at the end
@@ -43,7 +43,7 @@ def continuous(no_of_measurements, filename, interval_in_seconds=0.5):
             data_trans = [float(split_data[1]), float(split_data[3]), timestamp]#select string's that are cap and loss and make them floats
         except:
             data_trans = ['NaN', 'NaN', timestamp]#if data cannot be converted to float this can happens when a value isn't produced by the AH2550 and instead 'PF' and 'NS'
-                                                  #are then the 1st and 3rd index, this is useless data and the sleep time after writing may need changing
+        #are then the 1st and 3rd index, this is useless data and the sleep time after writing may need changing
         print(data_trans)
         df.loc[i] = data_trans
         time.sleep(interval_in_seconds)
@@ -52,9 +52,6 @@ def continuous(no_of_measurements, filename, interval_in_seconds=0.5):
 
 
 continuous(1800,'Cu_py_5k_max_strain_test_200to_neg_200V')
-
-
- 
 
 
 
