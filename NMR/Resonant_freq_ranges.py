@@ -40,7 +40,7 @@ Parallel_series = True
 
 if Series_parallel and not Parallel_series:
     res_f = (1/(2*np.pi) * 1/np.sqrt(coil_L*(C_match_tot+C_tune)))*10**-6 #resonant freq in MHz
-    print(f'Seies Parallel resonant frequency range is: {res_f}MHz')
+    print(f'Series Parallel resonant frequency range is: {res_f}MHz')
 
 if not Series_parallel and Parallel_series:
     C_tot = 1/(C_match_tot**-1 +C_tune**-1)

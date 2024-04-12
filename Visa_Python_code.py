@@ -42,7 +42,7 @@ def continuous(no_of_measurements, filename, interval_in_seconds=0.5):
         try:
             data_trans = [float(split_data[1]), float(split_data[3]), timestamp]#select string's that are cap and loss and make them floats
         except:
-            data_trans = ['NaN', 'NaN', timestamp]#if data cannot be converted to float this can happens when a value isnt produced by the AH2550 and instead 'PF' and 'NS'
+            data_trans = ['NaN', 'NaN', timestamp]#if data cannot be converted to float this can happens when a value isn't produced by the AH2550 and instead 'PF' and 'NS'
                                                   #are then the 1st and 3rd index, this is useless data and the sleep time after writing may need changing
         print(data_trans)
         df.loc[i] = data_trans
