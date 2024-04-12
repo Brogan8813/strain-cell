@@ -16,7 +16,6 @@ del_v = []
 for i in range(len(voltage)):
     diff = voltage[i,0]-voltage[i,1]
     del_v.append(diff)
- 
 #print(del_v)
 
 capacitance = np.array([1.20288,1.20245,1.20344,1.15060,1.02987,1.02387,0.99592,1.09530,1.09739,0.95097,1.09339,1.30729,1.15030, 1.13606,1.13506,
