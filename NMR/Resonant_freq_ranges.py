@@ -10,18 +10,19 @@ import numpy as np
 coax_imp = 50 
 
 #max and min capacitances in pF
-C_match = np.array([1, 120]) 
+C_match_1 = np.array([1, 120]) 
+C_match_2 = np.array([1, 120]) 
 C_tune = np.array([1, 120])
 
 #convert to F
-C_match = C_match*10**-12 
+C_match_tot = C_match_1*10**-12 +C_match_2*10**-12
 C_tune = C_tune*10**-12
 
 #quality factor of coil Q
-Q = 190 
+Q = 210 
 
 #Inductance of coil
-coil_turns = 200
+coil_turns = 20
 medium_permeability =  np.pi*4*10**-7 #vacuum value
 coil_length = 3 #units in cm, side on measured
 coil_diameter = 1 #units in cm from top down
@@ -33,21 +34,21 @@ coil_L = (coil_turns**2 * (coil_diameter/2)**2)/(9*coil_diameter/2 + 10*coil_len
 print(coil_L)
 
 
-
+#pick your circuit type by making it True and the other False
 Series_parallel = False
 Parallel_series = True
 
 if Series_parallel and not Parallel_series:
-    res_f = (1/(2*np.pi) * 1/np.sqrt(coil_L*(C_match+C_tune)) )*10**-6 #resonant freq in MHz
-    print(f'resonant frequency range is: {res_f}MHz')
+    res_f = (1/(2*np.pi) * 1/np.sqrt(coil_L*(C_match_tot+C_tune)))*10**-6 #resonant freq in MHz
+    print(f'Seies Parallel resonant frequency range is: {res_f}MHz')
 
 if not Series_parallel and Parallel_series:
-    C_tot = 1/(C_match**-1 +C_tune**-1)
-    res_f = (1/(2*np.pi) * 1/np.sqrt(coil_L*C_tot) )*10**-6 #resonant freq in MHz
-    print(f'resonant frequency range is: {res_f}MHz')
+    C_tot = 1/(C_match_tot**-1 +C_tune**-1)
+    res_f = (1/(2*np.pi) * 1/np.sqrt(coil_L*C_tot))*10**-6 #resonant freq in MHz
+    print(f'Parallel Series resonant frequency range is: {res_f}MHz')
 
 elif Series_parallel and Parallel_series:
-    print('Check the true false statements, one must be true, one must be false to shwo which circuit yiou are using')
+    print('Check the true false statements, one must be true, one must be false to show which circuit you are using')
 elif not Series_parallel and not Parallel_series:
-    print('Check the true false statements, one must be true, one must be false to shwo which circuit yiou are using')
+    print('Check the true false statements, one must be true, one must be false to show which circuit you are using')
 
