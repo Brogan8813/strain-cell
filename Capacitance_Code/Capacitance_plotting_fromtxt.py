@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 
 #Filepath where the point the test datafile exists in so it can be accessed
-filepath = "C:/Users/TXB909/Documents/strain-cell/"
+filepath = "C:/Users/TXB909/Documents/strain-cell/Capacitance_Code/"
 file = "Cu_py_5k_max_strain_test_200to_neg_200V.csv"
 
 FILEANDPATH=filepath+file
@@ -62,7 +62,7 @@ def plot_data(df, x_column_title, y_column_title, title):
 
     plt.scatter(x, y, s=10, 
                 #c='r', 
-                  facecolors='none', edgecolors= 'b', label = 'Data Points')
+            facecolors='none', edgecolors= 'b', label = 'Data Points')
     plt.plot(x, y, c='r', linewidth=0.8)
     plt.title(title)
     plt.xlabel(x_column_title)
