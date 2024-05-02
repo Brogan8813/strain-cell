@@ -29,16 +29,16 @@ def continuous(no_of_measurements, filename, interval_in_seconds=0.5):
     '''takes a certain "no_of_measurements" of single measurements separated by "interval_in_seconds" of capacitance and loss with a set interval (default 1 second) between each measurement
     and puts them into a csv file titled "filename" along with a timestamp'''
     
-    header = ['Capacitance(pF)', 'Loss (nSiemens)', 'Timestamp (24hr)']
+    header = ['Capacitance(pF)', 'Loss (nSiemens)', 'Timestamp (s)']
     df =pd.DataFrame(columns=header) #df of numbers to put into csv file at the end
-    
+    start_time = time.time()
     for i in range(no_of_measurements):
         data_trans = []
         AH_2550.write('single')
         time.sleep(0.1)#waits as the AH is slow at times to do measurements 
         raw_data = AH_2550.read_raw()
         split_data = raw_data.split()#splits data at every whitespace, can then index through each split string
-        timestamp = time.strftime('%H:%M:%S')
+        timestamp = time.time()-start_time
         try:
             data_trans = [float(split_data[1]), float(split_data[3]), timestamp]#select string's that are cap and loss and make them floats
         except:
