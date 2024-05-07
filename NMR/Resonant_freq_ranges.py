@@ -21,12 +21,22 @@ C_tune = C_tune*10**-12
 #quality factor of coil Q
 Q = 210 
 
-#Inductance of coil
+#Inductance of coil the below are defaults
+'''
 coil_turns = 20
-medium_permeability =  np.pi*4*10**-7 #vacuum value
 coil_length = 3 #units in cm, side on measured
 coil_diameter = 1 #units in cm from top down
 wire_thickness = 200*10**-4 #units of cm
+'''
+
+
+'''Change the below values for your coil'''
+coil_turns = 10
+coil_length = 0.8 #units in cm, side on measured
+coil_diameter = 0.7 #units in cm from top down
+wire_thickness = 0.69*10**-3 #units of cm
+
+medium_permeability =  np.pi*4*10**-7 #vacuum value
 
 coil_area = (np.pi)*coil_diameter**2/4 
 coil_L = (coil_turns**2 * (coil_diameter/2)**2)/(9*coil_diameter/2 + 10*coil_length) *1/2.54 *1/1.00000037 *10**-6 #in henrys
