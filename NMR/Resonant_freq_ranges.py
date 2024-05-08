@@ -34,7 +34,7 @@ wire_thickness = 200*10**-4 #units of cm
 coil_turns = 5
 coil_length = 0.8 #units in cm, side on measured
 coil_diameter = 0.7 #units in cm from top down
-wire_thickness = 0.69*10**-3 #units of cm
+wire_thickness = 0.69*10**-3 #units of cm,diameter
 
 medium_permeability =  np.pi*4*10**-7 #vacuum value
 
