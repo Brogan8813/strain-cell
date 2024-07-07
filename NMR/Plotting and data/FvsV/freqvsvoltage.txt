@@ -1,0 +1,7 @@
+spectrometer_frequency(MHz),voltage(mV),pulse_frequency(MHz)
+5,1032,10
+600,280,600
+500,344.5,500
+50,800,50
+213.16,568,205
+
