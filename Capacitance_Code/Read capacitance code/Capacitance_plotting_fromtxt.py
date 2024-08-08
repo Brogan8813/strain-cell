@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 
 #Filepath where the point the test datafile exists in so it can be accessed
-filepath = "C:/Users/TXB909/Documents/strain-cell/Capacitance_Code/"
+filepath = "C:/Users/TXB909/Documents/strain-cell/Capacitance_Code/Read capacitance code/Data/"
 file = "Cu_py_5k_max_strain_test_200to_neg_200V.csv"
 
 FILEANDPATH=filepath+file
