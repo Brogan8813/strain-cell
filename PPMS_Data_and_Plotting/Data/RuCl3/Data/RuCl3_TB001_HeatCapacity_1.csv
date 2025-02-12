@@ -14,7 +14,6 @@ STARTUPAXIS, Y1, 10, LINEAR, AUTO
 3144097.61,Error: Temperature of platform does not match the system temperature : System = 16.006 K;  Platform = 17.025 K
 3144936.58,CALFILE: C:\QdPpms\HEATCA~1\TempCal\Standard\Puck1960_9.cal|Addenda #3 measured on 05/02/2025 from 2.8972 to 302.75 K
 
-[Data]
 Time Stamp (Seconds),Comment (),System Status (Code),Puck Temp (Kelvin),System Temp (Kelvin),Field (Oersted),Pressure (Torr),Sample Temp (Kelvin),Temp Rise (Kelvin),Samp HC (J/mole-K),Samp HC Err (J/mole-K),Addenda HC (�J/K),Addenda HC Err (�J/K),Total HC (�J/K),Total HC Err (�J/K),Fit Deviation (ChiSquare),Time Const tau1 (seconds),Time Const tau2 (seconds),Sample Coupling (Percent),Debye Temp (Kelvin),Debye Temp Err (Kelvin),Cal Correction (Factor),Therm Resist (Ohms),Htr Resist (Ohms),Puck Resist (Ohms),Wire Cond (W/K),Meas Time (seconds),Temp Squared (K^2),Samp HC/Temp (J/mole-K/K),Addenda Offset HC (�J/K)
 3144936.72,,5905,,15.9974,0.021,9.1E-6,15.449737,0.38809342,3.4097252,0.01169,43.838577,0.04798,586.29112,0.8708,0.17464073,24.516109,0.0030759311,99.818408,203.14146,0.317,1,,,,2.3951773E-5,41.511169,238.69438,0.22069794,0
 3145134.19,,5905,,16.006,0.021,9.1E-6,15.407613,0.31855236,3.3993506,0.01111,43.488197,0.04768,584.29026,0.6624,3.4404391,24.928853,0.0037246555,99.782777,202.79551,0.2906,1,,,,2.3482031E-5,49.032219,237.39453,0.22062799,0
