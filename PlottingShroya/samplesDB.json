@@ -1,0 +1,56 @@
+[   
+    {
+        "batchNo": "AA1_TMMC",
+        "formula": "NC4H12MnCl3",
+        "description": "TMMC",
+        "path": "TMMC/AA1_TMMC",
+        "totalMass": "",
+        "experiments": [{
+            "expID": "021024VSM",
+            "type": "MvT",
+            "path": "TMMC/AA1_TMMC/021024VSM",
+            "date": "02-10-24",
+            "mass": "10.6",
+            "conditions": ["500-Oe"],
+            "description": ""
+        },
+        {
+            "expID": "141024VSM",
+            "type": "MvT",
+            "path": "TMMC/AA1_TMMC/141024VSM",
+            "date": "14-10-24",
+            "mass": "5.1",
+            "conditions": ["500-Oe"],
+            "description": ""
+        }
+        ]
+    },
+    {
+        "batchNo": "NbTi1",
+        "formula": "NbTi",
+        "description": "NbTi",
+        "path": "NbTi",
+        "totalMass": "",
+        "experiments": [{
+            "expID": "NbTi1_MvT",
+            "type": "MvT",
+            "path": "C:/Users/TXB909/Documents/strain-cell/PPMS_Data_and_Plotting/Data/NbTi",
+            "files" : ["0003.DAT"],
+            "date": "02-17-25",
+            "mass": "4.3",
+            "conditions": ["500-Oe"],
+            "description": ""
+        },
+        {
+            "expID": "NbTi1_MvH",
+            "type": "MvH",
+            "path": "C:/Users/TXB909/Documents/strain-cell/PPMS_Data_and_Plotting/Data/NbTi",
+            "files" : ["0004.DAT", "0005.DAT", "0006.DAT", "0007.DAT", "0008.DAT"],
+            "date": "02-17-25",
+            "mass": "4.3",
+            "conditions": ["500-Oe"],
+            "description": ""
+        }
+        ]
+    }
+]
