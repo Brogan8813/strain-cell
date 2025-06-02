@@ -1,0 +1,11 @@
+#pressure cell test 9 digital data first then 154 is the first analogue height
+Height (cm),Increasing displacement(um), Decreasing displacement(um)
+161,-1420.5,162.5
+139,-755.5,137.5
+104,-206.1,109.8
+65,183.6,92.7
+17,134.4,37.5
+154,-520,10
+124,-220,-90
+84,340,400
+48,190,160
