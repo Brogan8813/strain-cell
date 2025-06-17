@@ -61,7 +61,8 @@ if __name__ == "__main__":
 
 
 #USAGE 
-#Navigate to the directory of the host folder of this script in command prompt
+#Navigate to the directory of the host folder of this script in command prompt:
+#cd "C:\Users\thoma\Documents\Physics_Work\Python Scripts\strain-cell\PPMS_Data_and_Plotting\Plotting\MusrPlotting\OldFileFormats\"
 #then run:
 #python parse_datafile.py datafile.txt
 #ensuring that the datafile.txt is the correct one you want to parse through
