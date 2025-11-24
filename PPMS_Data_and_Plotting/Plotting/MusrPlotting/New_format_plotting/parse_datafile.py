@@ -61,10 +61,12 @@ if __name__ == "__main__":
 
 
 #USAGE 
-#Navigate to the directory of the host folder of this script in command prompt
+#Navigate to the directory of the host folder of this script in command prompt: e.g. 
+#cd C:\Users\TXB909\Documents\strain-cell\PPMS_Data_and_Plotting\Plotting\MusrPlotting\New_format_plotting\
 #then run:
 #python parse_datafile.py datafile.txt
 #ensuring that the datafile.txt is the correct one you want to parse through
+#datafile_example.txt is the example file provided, runs must be in this format to be parsed correctly
 #and ensuring there is no alreayd parsed datafile in the folder, it will not overwrite a previous one
 #so rename the previous one and it should create a new one called
 #datafile_parsed.csv
