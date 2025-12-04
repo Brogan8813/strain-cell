@@ -1,0 +1,12 @@
+#First time setup
+
+#go to folder where you want code
+git clone https://github.com/murari0/SpinitHelpers.jl
+#in Julia
+] dev <path\SpinitHelpers.jl>
+
+#Each subsequent time you want to update code
+
+#go into the folder containing code ("SpinitHelpers.jl" folder)
+git fetch
+git pull
