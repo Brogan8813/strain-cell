@@ -1,0 +1,24 @@
+#Loading 1D Spinit files:
+
+#check install
+]
+status
+#should show the package SpinitHelpers as installed 
+
+#load package
+backspace
+using SpinitHelpers
+
+#Display the two functions, export1D and exportp2D
+?SpinitHelpers 
+#export1D: converts 1D Spinit data to ssNake json format
+#look at each's input parameters using 
+?export1D 
+#or 
+?exportp2D
+
+# 1 method for generic function "export1D" from SpinitHelpers:
+#export1D(inpath; infile, inheader, outpath, outfile)
+
+# 1 method for generic function "exportp2D" from SpinitHelpers:
+#exportp2D(inpath; infile, inheader, outpath, outfile, x2D) 

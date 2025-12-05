@@ -1,0 +1,17 @@
+#Spectra
+Load file
+shift points by -tau
+set size (8K button)
++2^n zeroes
+Fourier
+rephase
+
+#T1/2D
+Load file
+shift points by -tau
+set size (8K button)
++2^n zeroes
+Fourier
+rephase
+matrix> region> integrate
+select region around peak

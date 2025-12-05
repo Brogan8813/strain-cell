@@ -1,6 +1,6 @@
 #First time setup
 
-#go to folder where you want code
+#go to folder where you want code: C:\Users\TXB909\Documents
 git clone https://github.com/murari0/SpinitHelpers.jl
 #in Julia
 ] dev <path\SpinitHelpers.jl>
