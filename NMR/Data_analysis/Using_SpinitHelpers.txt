@@ -1,6 +1,7 @@
 #Loading 1D Spinit files:
 
 #check install
+julia
 ]
 status
 #should show the package SpinitHelpers as installed 

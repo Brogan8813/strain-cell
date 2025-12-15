@@ -15,3 +15,7 @@ Fourier
 rephase
 matrix> region> integrate
 select region around peak
+
+
+#T1/Cut echo and stitch correctly 
+
