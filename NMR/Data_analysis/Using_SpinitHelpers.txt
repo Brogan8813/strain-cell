@@ -23,3 +23,32 @@ using SpinitHelpers
 
 # 1 method for generic function "exportp2D" from SpinitHelpers:
 #exportp2D(inpath; infile, inheader, outpath, outfile, x2D) 
+
+e.g.
+export1D("C:/Users/TXB909/Documents/strain-cell/PPMS_Data_and_Plotting/Data/RuCl3/Data/NMR_NQR/RuCl3_NQR_November_2025/880-916/892/",infile="data.dat",outfile="892.json")
+
+
+
+
+exportp2D("C:/Users/TXB909/Documents/strain-cell/PPMS_Data_and_Plotting/Data/RuCl3/Data/NMR_NQR/RuCl3_NQR_November_2025/880-916/894/", infile="data.dat", outfile="894.json", x2D=[
+    200e-6,
+    239.206633820826e-6,
+    286.099068319454e-6,
+    342.183975359855e-6,
+    409.263384466297e-6,
+    489.492582721507e-6,
+    585.44936496537e-6,
+    700.216859329531e-6,
+    837.48258932404e-6,
+    1.001656955379e-3,
+    1.198014942697e-3,
+    1.432865608548e-3,
+    1.713754794692e-3,
+    2.049707578163e-3,
+    2.451518250447e-3,
+    2.932097142198e-3,
+    3.506885437104e-3,
+    4.194351303025e-3,
+    5.016583281293e-3,
+    6e-3
+])
