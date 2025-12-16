@@ -18,4 +18,7 @@ select region around peak
 
 
 #T1/Cut echo and stitch correctly 
-
+cut out first few points, say 50us for a 150us echo tau
+then use tools>swap echo and input its *shifted* tau value
+then add zeroes as normal and fourier/rephase
+integrate peak with about 2/3 of the peak width to ensure you get maximal signal
