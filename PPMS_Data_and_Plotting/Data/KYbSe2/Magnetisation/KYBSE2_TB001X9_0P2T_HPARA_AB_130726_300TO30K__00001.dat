@@ -1,0 +1,31 @@
+[Header]
+; VSM Data File (default extension .dat)
+; Copyright (c) 2003-2013, Quantum Design, Inc. All rights reserved.
+TITLE,KYbSe2 FCC 300 to 30K
+FILEOPENTIME,48324666.77,07/14/2026,3:54 pm
+BYAPP,VSM,2.0,2.0
+INFO,PPMS VSM Option Release 1.4.10 Build 1,APPNAME
+INFO,Quantum Design Linear Motor Servo Controller,MOTOR_MODULE_NAME
+INFO,3101-100 M1,MOTOR_HW_VERSION
+INFO,MMC920,MOTOR_SERIAL_NUMBER
+INFO,SRV No X-over 01.03.11,MOTOR_SOFTWARE_VERSION
+INFO,Quantum Design VSM Detection Module,VSM_MODULE_NAME
+INFO,3101-150 F0,VSM_HW_VERSION
+INFO,VSM672,VSM_SERIAL_NUMBER
+INFO,VSM No X-over 01.02.05 May 20 2008 13:51:47,VSM_SOFTWARE_VERSION
+INFO,659,PREAMP_SERIAL_NUMBER
+INFO,749,COIL_SERIAL_NUMBER
+INFO,0,MOMENT_UNITS
+INFO,KYbSe2,SAMPLE_MATERIAL
+INFO,TB001X9,SAMPLE_COMMENT
+INFO,4.4,SAMPLE_MASS
+INFO,,SAMPLE_VOLUME
+INFO,370.09,SAMPLE_MOLECULAR_WEIGHT
+INFO,,SAMPLE_SIZE
+INFO,,SAMPLE_SHAPE
+DATATYPE,COMMENT,1
+DATATYPE,TIME,2
+STARTUPAXIS,X,2
+STARTUPAXIS,Y1,5
+[Data]
+Comment,Time Stamp (sec),Temperature (K),Magnetic Field (Oe),Moment (emu),M. Std. Err. (emu),Transport Action,Averaging Time (sec),Frequency (Hz),Peak Amplitude (mm),Center Position (mm),Coil Signal' (mV),Coil Signal" (mV),Range (mV),M. Quad. Signal (emu),M. Raw' (emu),M. Raw" (emu),Min. Temperature (K),Max. Temperature (K),Min. Field (Oe),Max. Field (Oe),Mass (grams),Motor Lag (deg),Pressure (Torr),VSM Status (code),Motor Status (code),Measure Status (code),Measure Count,PPMS Status (code),System Temp. (K),System Field (Oe),Sample Position (deg),Bridge 1 Resistance (ohms),Bridge 1 Excitation (µA),Bridge 2 Resistance (ohms),Bridge 2 Excitation (µA),Bridge 3 Resistance (ohms),Bridge 3 Excitation (µA),Bridge 4 Resistance (ohms),Bridge 4 Excitation (µA),Signal 1 Vin (V),Signal 2 Vin (V),Digital Inputs (code),Drive 1 Iout (mA),Drive 1 Ipower (W),Drive 2 Iout (mA),Drive 2 Ipower (W),Pressure (),Map 20 (),Map 21 (),Map 22 (),Map 23 (),Map 24 (),Map 25 (),Map 26 (),Map 27 (),Map 28 (),Map 29 ()
